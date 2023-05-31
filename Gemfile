@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-gem 'get_process_mem', '~> 0.2.7'
+gem 'memory_profiler', '~> 1.0', '>= 1.0.1'
 gem 'faker', '~> 3.2'

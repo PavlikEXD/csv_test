@@ -4,11 +4,9 @@ GEM
     concurrent-ruby (1.2.2)
     faker (3.2.0)
       i18n (>= 1.8.11, < 2)
-    ffi (1.15.5)
-    get_process_mem (0.2.7)
-      ffi (~> 1.0)
     i18n (1.13.0)
       concurrent-ruby (~> 1.0)
+    memory_profiler (1.0.1)
 
 PLATFORMS
   x86_64-darwin-20
@@ -16,7 +14,7 @@ PLATFORMS
 
 DEPENDENCIES
   faker (~> 3.2)
-  get_process_mem (~> 0.2.7)
+  memory_profiler (~> 1.0, >= 1.0.1)
 
 BUNDLED WITH
    2.3.9
