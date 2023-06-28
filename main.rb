@@ -3,7 +3,7 @@ require 'benchmark'
 require_relative 'lib/tasks/user_timing_task'
 require_relative 'lib/tasks/task_timing_task'
 
-file_path = 'tmp/data.csv'
+file_path = 'tmp/teach_call.csv'
 
 def measure_time_and_memory
   memory_before = `ps -o rss= -p #{Process.pid}`.to_i / 1024 # Memory in MB
