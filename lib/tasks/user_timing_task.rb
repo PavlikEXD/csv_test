@@ -10,6 +10,11 @@ require 'csv'
 class UserTimingTask
   def initialize(file_path)
     # Read the CSV file and save the data in the user_timing hash
+
+    # @user_timing = Hash.new(Hash.new(0))
+    # @user_timing[user_id][task_id] += work_duration
+    # @user_timing
+    # => {}
     @user_timing = {}
 
     CSV.foreach(file_path, headers: true) do |row|

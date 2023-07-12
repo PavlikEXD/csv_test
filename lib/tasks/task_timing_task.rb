@@ -18,6 +18,9 @@ class TaskTimingTask
     end
 
     # Sort by duration and save only the top 10 tasks
+    # sort makes an array of arrays, so we need to convert it to a hash
+    # @task_timing.sort_by { |_task_id, duration| duration }
+    # { 1 => 100, 2 => 200, 3 => 300 } => [[1, 100], [2, 200], [3, 300]]
     @task_timing = @task_timing.sort_by { |_task_id, duration| duration }.last(10).to_h
   end
 
